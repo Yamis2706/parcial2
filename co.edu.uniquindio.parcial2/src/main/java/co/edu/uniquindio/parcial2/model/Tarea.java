@@ -2,8 +2,14 @@ package co.edu.uniquindio.parcial2.model;
 
 import java.util.Date;
 
+/**
+ * Clase Tarea, es un Tipo de FincaUQ
+ */
 public class Tarea {
 
+    /**
+     * Atributos de la Clase
+     */
     private int numeroTarea;
     private Date fechaInicio;
     private Date fechaFin;
@@ -11,16 +17,27 @@ public class Tarea {
     private String descripcion;
     private Empleado empleadoAsociado;
 
+    /**
+     * Variable para Relacionar Padre
+     */
     FincaUQ ownedByFincaUQ;
 
-
+    /**
+     * Constructor Vacío
+     */
     public Tarea() {
-
     }
 
-    public Tarea(int numeroTarea, Date fechaInicio, Date fechaFin,
-                 double duracionTarea, String descripcion,
-                 Empleado empleadoAsociado) {
+    /**
+     * Constructor con Parámetros
+     * @param numeroTarea
+     * @param fechaInicio
+     * @param fechaFin
+     * @param duracionTarea
+     * @param descripcion
+     * @param empleadoAsociado
+     */
+    public Tarea(int numeroTarea, Date fechaInicio, Date fechaFin, double duracionTarea, String descripcion, Empleado empleadoAsociado) {
         this.numeroTarea = numeroTarea;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
@@ -29,6 +46,10 @@ public class Tarea {
         this.empleadoAsociado = empleadoAsociado;
     }
 
+    /**
+     * Getters y Setters
+     * @return
+     */
     public int getNumeroTarea() {
         return numeroTarea;
     }
@@ -69,14 +90,6 @@ public class Tarea {
         this.descripcion = descripcion;
     }
 
-    public Empleado getEmpleadoAsociado() {
-        return empleadoAsociado;
-    }
-
-    public void setEmpleadoAsociado() {
-        this.empleadoAsociado = empleadoAsociado;
-    }
-
     public FincaUQ getOwnedByFincaUQ() {
         return ownedByFincaUQ;
     }
@@ -85,6 +98,18 @@ public class Tarea {
         this.ownedByFincaUQ = ownedByFincaUQ;
     }
 
+    public Empleado getEmpleadoAsociado() {
+        return empleadoAsociado;
+    }
+
+    public void setEmpleadoAsociado(Empleado empleadoAsociado) {
+        this.empleadoAsociado = empleadoAsociado;
+    }
+
+    /**
+     * toString de la Clase
+     * @return
+     */
     @Override
     public String toString() {
         return "Tarea{" +
@@ -95,5 +120,38 @@ public class Tarea {
                 ", descripcion='" + descripcion + '\'' +
                 ", empleadoAsociado=" + empleadoAsociado +
                 '}';
+    }
+
+    /**
+     *
+     */
+    public void calcularDuracion() {
+        long duracionMili = fechaFin.getTime() - fechaInicio.getTime();
+        this.duracionTarea = duracionMili;
+        long minutos = convertirMiliAMinutos(duracionMili);
+        long horas = convertirMiliAHoras(duracionMili);
+        setDuracionTarea(minutos);
+    }
+
+    /**
+     *
+     * @param duracionMili
+     * @return
+     */
+    private long convertirMiliAHoras(long duracionMili) {
+        long horas = 0;
+        horas = duracionMili / 3600000;
+        return horas;
+    }
+
+    /**
+     *
+     * @param duracionMili
+     * @return
+     */
+    private long convertirMiliAMinutos(long duracionMili) {
+        long minutos = 0;
+        minutos = duracionMili / 60000;
+        return  minutos;
     }
 }

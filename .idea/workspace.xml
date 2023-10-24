@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b9e3111-dc9f-47d8-b119-fc28da092fed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/TestM/co/edu/uniquindio/parcial2/model/EmpleadoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/ejercicio2/MainMenuEjercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/CuentaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/PersonaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/util/CapturaDatosUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/ejercicio2/MainEjercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/FincaUQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/FincaUQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Jornalero.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Jornalero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Recolector.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Recolector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/TipoContrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/co.edu.uniquindio.parcial2/src/main/java/co/edu/uniquindio/parcial2/model/enumeracion/TipoContrato.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2XEJvvdPGbOUBBpeIAKAXPgtYLl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev__parcial__2",
+    "last_opened_file_path": "C:/Users/DELL/Documents/Programación I/parcial2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b9e3111-dc9f-47d8-b119-fc28da092fed" name="Changes" comment="" />
+      <created>1698188539496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698188539496</updated>
+      <workItem from="1698188540537" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
