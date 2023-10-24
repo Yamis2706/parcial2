@@ -14,41 +14,103 @@ public FincaUQ(String nombre) {this.nombre = nombre;}
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public  void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public static List<Tarea> getListaTareas() {
+    public  List <Tarea> getListaTareas() {
         return listaTareas;
     }
 
-    public static void setListaTareas(List<Tarea> listaTareas) {
+    public  void setListaTareas(List<Tarea> listaTareas) {
         FincaUQ.listaTareas = listaTareas;
     }
 
-    public static List<Empleado> getListaEmpleados() {
+    public static List <Empleado> getListaEmpleados() {
         return listaEmpleados;
     }
 
-    public static void setListaEmpleados(List<Empleado> listaEmpleados) {
+    public  void setListaEmpleados(List<Empleado> listaEmpleados) {
         FincaUQ.listaEmpleados = listaEmpleados;
 
     }
-    public static <integer> integer buscarEmpleado(String cedula) {
-        int tamanioLista = getListaEmpleados().size();
-        integer empleadoExiste = null;
-        int i = 0 ;
-        for (i = 0; i < tamanioLista; i++) {
-            Empleado empleado = getListaEmpleados().get(i);
-            if (empleado.getCedula().equalsIgnoreCase(cedula)) {
-                empleadoExiste = i;
-                System.out.println("El cliente con cédula" + cedula +
-                        "ya existe, no es posible crearlo de nuevo");
+
+    public boolean crearEmpleado(String nombre, String apellido, String cedula,
+                                 int edad, double salario, int numeroHorasTrabajo) {
+        Empleado empleado = new Empleado();
+        boolean cedulaExistente = false;
+        Empleado[] getListaEmpleados = new Empleado[0];
+        for (Empleado empleado1 : getListaEmpleados){
+            if (empleado1.getCedula().equalsIgnoreCase(cedula)) {
+                cedulaExistente = true;
+                break;
+            }
+        }
+        if (cedulaExistente) {
+            imprimir("El número de cédula" + cedula +  "ya existe, " +
+                    "digite un número diferente");
+        } else {
+            empleado.setNombre(nombre);
+            empleado.setApellido(apellido);
+            empleado.setCedula(cedula);
+            empleado.setEdad(edad);
+            empleado.setSalario(salario);
+            getListaEmpleados().add((Empleado) listaEmpleados);
+        }
+        return true;
+    }
+
+    private void imprimir(String mensaje) {
+    }
+
+    /**
+     *
+     */
+    public void getmostrarLosEmpleados() {
+        for (Empleado miEmpleado : getListaEmpleados() ) {
+            System.out.println(miEmpleado.toString());
+        }
+    }
+
+    public void mostrarEmpleadosPorTipo(int valorTipo) {
+        for (Empleado miEmpleado : getListaEmpleados()) {
+
+            if (valorTipo == 1 && miEmpleado instanceof Administrador) {
+                System.out.println(miEmpleado.toString());
+            }
+            if (valorTipo == 2 && miEmpleado instanceof Jornalero) {
+                System.out.println(miEmpleado.toString());
+            }
+            if (valorTipo == 3 && miEmpleado instanceof Recolector) {
+                System.out.println(miEmpleado.toString());
+            }
+        }
+    }
+
+    public void crearTarea(int numeroTarea, String cedulaEmpleado) {
+        Tarea tarea = new Tarea();
+        tarea.setNumeroTarea(numeroTarea);
+
+        Empleado empleado = obtenerEmpleado (cedulaEmpleado);
+        if (empleado != null){
+            tarea.setEmpleadoAsociado();
+        }
+
+        getListaTareas().add(tarea);
+    }
+
+    private Empleado obtenerEmpleado(String cedulaEmpleado) {
+        Empleado empleadoEncontrado = null;
+        for ( Empleado empleado : getListaEmpleados()) {
+            if (empleado.getCedula().equals(cedulaEmpleado)){
+                empleadoEncontrado = empleado;
                 break;
             }
 
         }
-        return empleadoExiste;
+        return empleadoEncontrado;
     }
-    
+
+    public void mostrarEmpleados() {
+    }
 }

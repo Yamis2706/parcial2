@@ -27,7 +27,7 @@ public class Empleado {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public  void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
@@ -75,7 +75,7 @@ public class Empleado {
         return tipoContrato;
     }
 
-    public void setTipoContrato(TipoContrato tipoContrato) {
+    public  void setTipoContrato(TipoContrato tipoContrato) {
         this.tipoContrato = tipoContrato;
     }
 
