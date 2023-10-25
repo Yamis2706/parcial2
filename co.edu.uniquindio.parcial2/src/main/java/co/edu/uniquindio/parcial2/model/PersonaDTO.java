@@ -10,9 +10,9 @@ public record PersonaDTO() {
     private static double salario;
     private static int numeroHorasTrabajo;
 
-    public PersonaDTO ( nombre,  apellido,  cedula,
+    public class PersonaDTO ( nombre,  apellido,  cedula,
                         edad,  salario,  numeroHorasTabajo) {
-        super ();
+        public static String nombre;super ();
         this.nombre = nombre;
         this.apellido = apellido;
 
